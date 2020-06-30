@@ -8,23 +8,24 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-
+// $_SERVER['REQUEST_URI'] != "/wordpress/"
 get_header();
-?>
 
+?>
 <main id="site-content" role="main">
 
 	<?php
-
-	if ( have_posts() ) {
-
-		while ( have_posts() ) {
-			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
-		}
+	switch ($_SERVER['REQUEST_URI']) {
+		case '/wordpress/':
+			require 'components/page.php';
+			break;
+		default:
+			while (have_posts()) {
+				the_post();
+				get_template_part( 'template-parts/content', get_post_type());
+			}
+			break;
 	}
-
 	?>
 
 </main><!-- #site-content -->
