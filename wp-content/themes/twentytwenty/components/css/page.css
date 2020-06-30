@@ -1,3 +1,11 @@
+.container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+.container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
 body{
 	background: #f5f5f5;
 }
@@ -8,20 +16,26 @@ body{
 	justify-content: center;
 }
 h2{
+	margin-top: 25px;
 	text-align: center;
 }
 p{
 	padding: 45px;
 }
 button{
+	text-transform: capitalize;
 	/*margin: auto !important;*/
+	margin-bottom: 25px !important;
 }
 .columns{
 	/*margin: 100px;*/
-	margin-bottom: none !important;
+	background: #f5f5f5;
+
 }
 .column{
-	box-shadow: 0px 0px 25px rgba(0,0,0,.2);
+	margin: 0px +25px !important;
+	margin-bottom: 0px !important;
+	box-shadow: 0px 0px 50px rgba(0,0,0,.005);
 }
 .landing .container .columns{
 	box-shadow: none;
