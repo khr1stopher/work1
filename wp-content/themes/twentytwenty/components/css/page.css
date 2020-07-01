@@ -9,20 +9,43 @@
 body{
 	background: #f5f5f5;
 }
-.landing{
+.landing,
+.mailing{
 	height: 100vh !important;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 h2{
-	margin-top: 25px;
 	text-align: center;
 }
 p{
-	padding: 45px;
+	padding: 35px;
 }
+#site-content > div > div > div > div.column.option2.is-size-4.box.has-text-centered > div{
+	margin-top: 25px;
+	background: url('http://localhost/wordpress/wp-content/uploads/2020/06/proteger.svg') center;
+	background-size: cover;
+	height: 50px;
+	width: 50px;
+}
+#site-content > div > div > div > div.column.option3.is-size-4.box.has-text-centered > div{
+	margin-top: 25px;
+	background: url('http://localhost/wordpress/wp-content/uploads/2020/06/tarjeta-de-credito.svg') center;
+	background-size: cover;
+	height: 50px;
+	width: 50px;
+}
+.icon{
+	margin-top: 25px;
+	background: url('http://localhost/wordpress/wp-content/uploads/2020/06/bandera.svg') center;
+	background-size: cover;
+	height: 50px;
+	width: 50px;
+}
+
 button{
+	text-decoration: none !important;
 	text-transform: capitalize;
 	/*margin: auto !important;*/
 	margin-bottom: 25px !important;
