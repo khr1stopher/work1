@@ -1,12 +1,15 @@
 let opcion = 'none';
+let button = document.getElementById("button");
+let loading = document.getElementById("loading");
 
-function elegirOpcion(button) {
-	document.getElementById("mailing").style.display = "";
-	document.getElementById("landing").style.display = "none";
-	opcion = button
-	alert('usted eligio la opcion ' + opcion)
+function elegirOpcion(opcion) {
+	if (opcion > 3 || opcion > 0) {
+		document.getElementById("mailing").style.display = "";
+		document.getElementById("landing").style.display = "none";
+		alert('usted eligio la opcion ' + opcion);
+	}
 }
-function back(button) {
+function back(opcion) {
 	document.getElementById("mailing").style.display = "none";
 	document.getElementById("landing").style.display = "";
 }

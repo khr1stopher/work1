@@ -19,6 +19,9 @@ get_header();
 		case '/wordpress/':
 			require 'components/page.php';
 			break;
+		case '/wordpress/mail.php/':
+			require 'components/mail.php';
+			break;
 		default:
 			while (have_posts()) {
 				the_post();

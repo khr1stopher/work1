@@ -63,3 +63,25 @@ button{
 .landing .container .columns{
 	box-shadow: none;
 }
+
+.bi.bi-arrow-left-short.box:active{
+	background: rgba(0,0,0,.1);
+}
+
+div.file label{
+	font-size: 1rem;
+}
+form{
+	/*width: 50%;
+	margin: auto;*/
+	padding: 25px;
+}
+button{
+	margin-bottom: 0px !important;
+	margin: 25px !important;
+	padding: 15px;
+}
+.head{
+	display: flex;
+	margin-top: 25px;
+}
