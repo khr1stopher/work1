@@ -10,7 +10,6 @@
  */
 // $_SERVER['REQUEST_URI'] != "/wordpress/"
 get_header();
-
 ?>
 <main id="site-content" role="main">
 

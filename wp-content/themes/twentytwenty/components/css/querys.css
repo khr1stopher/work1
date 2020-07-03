@@ -1,0 +1,28 @@
+@media (min-width: 0) and (max-width: 670px) {
+	
+}
+@media (min-width: 671px) and (max-width: 795px) {
+	
+}		
+@media (min-width: 796px) and (max-width: 1099px) {
+.landing,
+.mailing{
+	height: 100vh !important;
+}
+.column{
+	margin: +25px +25px !important;
+	margin-bottom: 0px !important;
+	box-shadow: 0px 0px 50px rgba(0,0,0,.005);
+}
+}	
+@media (min-width: 1100px) and (max-width: 10000px) {
+.landing,
+.mailing{
+	height: 100vh !important;
+}
+.column{
+	margin: 0px +25px !important;
+	margin-bottom: 0px !important;
+	box-shadow: 0px 0px 50px rgba(0,0,0,.005);
+}
+}

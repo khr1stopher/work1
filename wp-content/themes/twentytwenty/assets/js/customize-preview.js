@@ -77,7 +77,7 @@
 			if ( cover.length ) {
 				classNames = _.map( ranges, function( val ) {
 					return 'opacity-' + val;
-				} );
+				});
 
 				className = classNames[ ranges.indexOf( parseInt( setting.get(), 10 ) ) ];
 

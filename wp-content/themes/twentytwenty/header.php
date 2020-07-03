@@ -17,12 +17,10 @@
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-
-		<link rel="profile" href="https://gmpg.org/xfn/11">
-
 		<?php wp_head(); ?>
 		<?php if ($_SERVER['REQUEST_URI'] == '/wordpress/') {
-			echo '<link rel="stylesheet" type="text/css" href="wp-content/themes/twentytwenty/components/css/bulma.min.css"><link rel="stylesheet" type="text/css" href="wp-content/themes/twentytwenty/components/css/page.css">';
+			echo '<link rel="stylesheet" type="text/css" href="wp-content/themes/twentytwenty/components/css/bulma.min.css"><link rel="stylesheet" type="text/css" href="wp-content/themes/twentytwenty/components/css/page.css"><link rel="stylesheet" type="text/css" href="wp-content/themes/twentytwenty/components/css/querys.css">';
+			echo "<style>#landing > div > div.notification.is-primary.is-light > button{margin:0.5rem 2rem!important;}</style>";
 		}?>
 	</head>
 
